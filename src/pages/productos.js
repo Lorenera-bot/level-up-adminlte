@@ -1,7 +1,8 @@
 import React from 'react';
-import NavBarPrincipal from './navbar';
-import SideMenu from './sidemenu';
-import ListaProductos from './lista_productos';
+import NavBarPrincipal from './components/navbar';
+import SideMenu from './components/sidemenu';
+import ListaProductos from './components/lista_productos';
+
 
 function Productos() {
     return (

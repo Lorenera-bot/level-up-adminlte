@@ -1,0 +1,603 @@
+/* style.css - VERSIÓN CON BUEN CONTRASTE */
+
+/* ===== ESTILOS GENERALES ===== */
+body {
+    font-family: 'Roboto', sans-serif !important;
+    background-color: #000000 !important;
+    /* FONDO NEGRO */
+    color: #FFFFFF !important;
+    /* TEXTO BLANCO */
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* ===== CARDS PRINCIPALES ===== */
+
+/* Card general - AZUL OSCURO con texto blanco */
+.card {
+    background: #0a2d52 !important;
+    /* AZUL OSCURO SÓLIDO */
+    color: #FFFFFF !important;
+    /* TEXTO BLANCO */
+    border: 2px solid #1e8fff !important;
+    /* BORDE AZUL CLARO */
+    border-radius: 15px !important;
+    overflow: hidden !important;
+    margin-bottom: 25px !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+
+
+/* Títulos dentro de cards - VERDE NEÓN (para contraste con fondo azul) */
+.card-body h5.m-0,
+.card-body h2.bienvenido-titulo {
+    font-family: 'Orbitron', sans-serif !important;
+    font-weight: 700 !important;
+    color: #39FF14 !important;
+    /* VERDE NEÓN para títulos */
+    font-size: 1.8rem !important;
+    margin-bottom: 20px !important;
+    border-bottom: 2px solid #39FF14 !important;
+    padding-bottom: 10px !important;
+    display: inline-block !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+}
+
+/* Texto dentro de cards - BLANCO PURO para buena legibilidad */
+.card-text {
+    flex-grow: 1 !important;
+    color: #FFFFFF !important;
+    /* BLANCO PURO */
+    line-height: 1.7 !important;
+    font-size: 1.05rem !important;
+    margin-bottom: 0 !important;
+    font-weight: 400 !important;
+}
+
+/* Card con header */
+.card .card-header {
+    background: #00060b !important;
+    color: #39FF14 !important;
+    /* BLANCO */
+    font-family: 'Orbitron', sans-serif !important;
+    font-weight: 800 !important;
+    border-bottom: 2px solid #1e8fff !important;
+    padding: 20px 25px !important;
+    font-size: 3rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    text-shadow: 0 0 10px rgba(57, 255, 20, 0.5) !important;
+    margin: 0 !important;
+}
+
+.card .card-header h5.m-0 {
+    color: #FFFFFF !important;
+    /* BLANCO en el header */
+    font-family: 'Orbitron', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 1.8rem !important;
+    margin: 0 !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+/* ===== BOTÓN "VER PRODUCTOS" ===== */
+.btn-verproductos {
+    background-color: #39FF14 !important;
+    /* VERDE NEÓN */
+    color: #f8f7f7 !important;
+    /* TEXTO NEGRO (contraste alto) */
+    border: none !important;
+    border-radius: 5px !important;
+    padding: 12px 25px !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    transition: all 0.3s ease !important;
+    margin-top: 20px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    box-shadow: 0 4px 15px rgba(57, 255, 20, 0.3) !important;
+}
+
+.btn-primary:hover {
+    background-color: #2bd812 !important;
+    /* VERDE MÁS OSCURO */
+    color: #000000 !important;
+    /* TEXTO NEGRO */
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 20px rgba(57, 255, 20, 0.4) !important;
+}
+
+/* Icono del botón */
+.btn-primary i {
+    margin-right: 10px !important;
+    color: #000000 !important;
+    /* NEGRO para contrastar con fondo verde */
+}
+
+/* ===== HEADER PRINCIPAL ===== */
+.content-header {
+    background-color: #000000 !important;
+    /* FONDO NEGRO */
+    color: #FFFFFF !important;
+    /* TEXTO BLANCO */
+    padding: 40px 0 20px 0 !important;
+    margin-bottom: 30px !important;
+    border-bottom: 3px solid #39FF14 !important;
+}
+
+
+.content-header h1.m-0 {
+    font-family: 'Orbitron', sans-serif !important;
+    font-weight: 800 !important;
+    color: #39FF14 !important;
+    /* VERDE NEÓN */
+    font-size: 3rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    text-shadow: 0 0 10px rgba(57, 255, 20, 0.5) !important;
+    margin: 0 !important;
+}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb {
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.breadcrumb-item a {
+    color: #39FF14 !important;
+    /* VERDE para enlaces */
+    text-decoration: none !important;
+}
+
+.breadcrumb-item.active {
+    color: #FFFFFF !important;
+    /* BLANCO para activo */
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .content-header h1.m-0 {
+        font-size: 2rem !important;
+    }
+
+    .card-body h5.m-0 {
+        font-size: 1.5rem !important;
+    }
+
+    .card-text {
+        font-size: 1rem !important;
+    }
+
+    .btn-primary {
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+    }
+}
+
+.content-wrapper {
+    background-color: #000000 !important;
+    /* NEGRO */
+    min-height: calc(100vh - 120px) !important;
+    /* Altura completa menos header/footer */
+}
+
+/* Navbar principal - Color celeste */
+.navbar-white.navbar-light {
+    background-color: #1E90FF !important;
+    /* CELESTE */
+    border-bottom: 2px solid #1e8fff !important;
+}
+
+/* Links del navbar - Color blanco */
+.navbar-white.navbar-light .navbar-nav .nav-link {
+    color: #FFFFFF !important;
+    /* BLANCO */
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    padding: 10px 15px !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Hover de los links */
+.navbar-white.navbar-light .navbar-nav .nav-link:hover {
+    color: #FFFFFF !important;
+    /* VERDE al hover */
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 5px !important;
+}
+
+.main-sidebar {
+    background-color: #0c3865 !important;
+    /* Azul más oscuro */
+    border-right: 3px solid #1e8fff !important;
+}
+
+.sidebar-dark-primary .brand-link {
+    background-color: #0c3865 !important;
+    /* Azul más oscuro */
+    
+}
+
+.sidebar-dark-primary .brand-link .brand-text {
+    color: #FFFFFF !important;
+    font-family: 'Orbitron', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: #1E90FF !important;
+    /* Celeste para activo */
+    color: #FFFFFF !important;
+    border-left: 4px solid #1e8fff  !important;
+}
+
+.sidebar-dark-primary .nav-sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.sidebar-dark-primary .nav-sidebar .nav-link:hover {
+    background-color: rgba(30, 144, 255, 0.3) !important;
+    color: #FFFFFF !important;
+}
+
+/* ===== DETALLE DE PRODUCTO ===== */
+
+/* Card principal */
+.card-solid {
+    background: #0a2d52 !important;
+    border: 2px solid #1e8fff !important;
+    border-radius: 15px !important;
+    color: #FFFFFF !important;
+}
+
+.card-solid .card-body {
+    padding: 30px !important;
+}
+
+/* Títulos */
+.card-solid h1,
+.card-solid h3 {
+    color: #39FF14 !important;
+    font-family: 'Orbitron', sans-serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 20px !important;
+}
+
+.card-solid h1 {
+    font-size: 2.5rem !important;
+    text-shadow: 0 0 10px rgba(57, 255, 20, 0.3) !important;
+}
+
+.card-solid h3 {
+    font-size: 2rem !important;
+    border-bottom: 2px solid #39FF14 !important;
+    padding-bottom: 10px !important;
+}
+
+.card-solid h4 {
+    color: #39FF14 !important;
+    font-family: 'Orbitron', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 1.3rem !important;
+}
+
+/* Imagen del producto */
+
+
+.product-image:hover {
+    transform: scale(1.02) !important;
+    border-color: #39FF14 !important;
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.2) !important;
+}
+
+/* Miniaturas */
+.product-image-thumbs {
+    display: flex !important;
+    gap: 10px !important;
+    margin-top: 15px !important;
+    justify-content: center !important;
+}
+
+.product-image-thumb {
+    width: 80px !important;
+    height: 80px !important;
+    border: 2px solid #1e8fff !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+.product-image-thumb:hover,
+.product-image-thumb.active {
+    border-color: #39FF14 !important;
+    transform: translateY(-3px) !important;
+}
+
+.product-image-thumb img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Descripción */
+.card-solid p {
+    color: #FFFFFF !important;
+    font-size: 1.1rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 20px !important;
+}
+
+/* Capacidades (botones de capacidad) */
+.btn-group-toggle .btn {
+    background: rgba(30, 144, 255, 0.2) !important;
+    border: 2px solid #1e8fff !important;
+    color: #FFFFFF !important;
+    margin-right: 10px !important;
+    margin-bottom: 10px !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    min-width: 60px !important;
+}
+
+.btn-group-toggle .btn:hover {
+    background: rgba(57, 255, 20, 0.2) !important;
+    border-color: #39FF14 !important;
+    color: #39FF14 !important;
+    transform: translateY(-2px) !important;
+}
+
+.btn-group-toggle .btn.active {
+    background: #39FF14 !important;
+    border-color: #39FF14 !important;
+    color: #000000 !important;
+    font-weight: 600 !important;
+}
+
+/* Precio */
+.bg-gray {
+    background: rgba(30, 144, 255, 0.2) !important;
+    border: 2px solid #1e8fff !important;
+    border-radius: 10px !important;
+    padding: 15px 20px !important;
+}
+
+.bg-gray h2 {
+    color: #39FF14 !important;
+    font-family: 'Orbitron', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 2.5rem !important;
+    text-shadow: 0 0 10px rgba(57, 255, 20, 0.3) !important;
+    margin: 0 !important;
+}
+
+/* Botones principales */
+.btn-primary.btn-lg {
+    background: #39FF14 !important;
+    color: #000000 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 15px 30px !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    margin-right: 15px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+.btn-primary.btn-lg:hover {
+    background: #2bd812 !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 5px 15px rgba(57, 255, 20, 0.4) !important;
+}
+
+.btn-default.btn-lg {
+    background: rgba(30, 144, 255, 0.2) !important;
+    color: #FFFFFF !important;
+    border: 2px solid #1e8fff !important;
+    border-radius: 8px !important;
+    padding: 15px 30px !important;
+    font-size: 1.2rem !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+.btn-default.btn-lg:hover {
+    background: rgba(57, 255, 20, 0.2) !important;
+    border-color: #39FF14 !important;
+    color: #39FF14 !important;
+    transform: translateY(-3px) !important;
+}
+
+/* Iconos en botones */
+.btn i {
+    margin-right: 10px !important;
+    font-size: 1.3rem !important;
+}
+
+.btn-primary.btn-lg i {
+    color: #000000 !important;
+}
+
+.btn-default.btn-lg i {
+    color: inherit !important;
+}
+
+/* Redes sociales */
+.product-share {
+    display: flex !important;
+    gap: 20px !important;
+    margin-top: 30px !important;
+    justify-content: center !important;
+}
+
+.product-share a {
+    color: #1e8fff !important;
+    transition: all 0.3s ease !important;
+}
+
+.product-share a:hover {
+    color: #39FF14 !important;
+    transform: translateY(-3px) !important;
+}
+
+.product-share i {
+    font-size: 2rem !important;
+}
+
+/* Tabs de descripción/comentarios */
+.nav-tabs {
+    border-bottom: 2px solid #1e8fff !important;
+    background: rgba(30, 144, 255, 0.1) !important;
+    border-radius: 10px 10px 0 0 !important;
+    padding: 10px 20px !important;
+}
+
+.nav-tabs .nav-link {
+    color: #FFFFFF !important;
+    border: 2px solid transparent !important;
+    border-radius: 8px !important;
+    margin-right: 10px !important;
+    padding: 10px 25px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    background: rgba(30, 144, 255, 0.2) !important;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #39FF14 !important;
+    background: rgba(57, 255, 20, 0.1) !important;
+    border-color: #39FF14 !important;
+}
+
+.nav-tabs .nav-link.active {
+    color: #000000 !important;
+    background: #39FF14 !important;
+    border-color: #39FF14 !important;
+    font-weight: 700 !important;
+}
+
+/* Contenido de tabs */
+.tab-content {
+    background: rgba(30, 144, 255, 0.1) !important;
+    border: 2px solid #1e8fff !important;
+    border-top: none !important;
+    border-radius: 0 0 10px 10px !important;
+    padding: 30px !important;
+    min-height: 200px !important;
+    color: #FFFFFF !important;
+}
+
+/* Descripción larga */
+#descripcion {
+    font-size: 1.1rem !important;
+    line-height: 1.8 !important;
+}
+
+/* Comentarios */
+.comentario {
+    background: rgba(30, 144, 255, 0.2) !important;
+    border: 1px solid #1e8fff !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.comentario strong {
+    color: #39FF14 !important;
+    font-size: 1.1rem !important;
+}
+
+.comentario em {
+    color: #D3D3D3 !important;
+    font-size: 0.9rem !important;
+}
+
+.comentario p {
+    color: #FFFFFF !important;
+    margin-top: 10px !important;
+    font-size: 1rem !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .card-solid h1 {
+        font-size: 2rem !important;
+    }
+    
+    .card-solid h3 {
+        font-size: 1.5rem !important;
+    }
+    
+    .product-image {
+        max-height: 400px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-solid .card-body {
+        padding: 20px !important;
+    }
+    
+    .btn-primary.btn-lg,
+    .btn-default.btn-lg {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+        justify-content: center !important;
+    }
+    
+    .product-share {
+        gap: 15px !important;
+    }
+    
+    .product-share i {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-solid h1 {
+        font-size: 1.5rem !important;
+    }
+    
+    .product-image {
+        max-height: 300px !important;
+        padding: 10px !important;
+    }
+    
+    .bg-gray h2 {
+        font-size: 2rem !important;
+    }
+    
+    .nav-tabs .nav-link {
+        padding: 8px 15px !important;
+        font-size: 0.9rem !important;
+    }
+    
+    .tab-content {
+        padding: 20px !important;
+    }
+}
+
+.table-reporte {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    border: 2px solid #1e8fff !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}

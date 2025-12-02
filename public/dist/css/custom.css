@@ -1,0 +1,26 @@
+.product-card {
+    width: 100%;
+    text-align: center;
+}
+
+.product-thumb-container {
+    width: 100%;
+    height: 180px; /* Ajusta el alto como quieras */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff; /* por si alguna imagen es transparente */
+}
+
+.product-thumb {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;      /* Altura fija */
+  object-fit: contain; /* Escala imagen sin deformar */
+}
